@@ -1,0 +1,52 @@
+<script>
+  document.getElementById("work").addEventListener("click", function() {
+    var divworkPosition = document.getElementById("divwork").getBoundingClientRect().top;
+    window.scrollTo({
+        top: divworkPosition,
+        behavior: 'smooth'
+    });
+});
+document.getElementById("support").addEventListener("click", function() {
+    var divworkPosition = document.getElementById("divsupport").getBoundingClientRect().top;
+    window.scrollTo({
+        top: divworkPosition,
+        behavior: 'smooth'
+    });
+});
+
+</script>
+
+
+<div class="flex justify-center bg-black/5">
+  <nav class="w-11/12 h-auto text-white">
+    <div class="p-2 flex justify-between">
+      <div class="flex items-center">
+        <img src="icon.png" alt="" />
+        <h3 class="p-2 text-lg font-bold">Volume Booster</h3>
+      </div>
+      <div class="flex items-center justify-around">
+        <div class="m-8 cursor-pointer p-3 rounded-full hover:bg-cyan-700/75 transition duration-300 ease-in" id="work">
+          <h4>How it works</h4>
+        </div>
+        <div
+          class="m-8 cursor-pointer p-3 rounded-full hover:bg-cyan-700/75 transition duration-300 ease-in w-28 "
+        >
+        <h4 class=" text-center" id="support">Support</h4>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  * {
+    font-family: "Exo 2", sans-serif;
+  }
+</style>
